@@ -21,5 +21,8 @@ export default class SceneAdapter extends cc.Component {
                 node.scale = cc.winSize.width / node.width;
             }
         }
+        if (!cc.sys.isMobile && !node.getComponent(cc.Mask)) {
+            node.addComponent(cc.Mask);
+        }
     }
 }
