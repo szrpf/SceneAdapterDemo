@@ -9,18 +9,18 @@
     "default"
   ],
   "start-scene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
-  "design-resolution-width": 960,
-  "design-resolution-height": 640,
+  "design-resolution-width": 0,
+  "design-resolution-height": 0,
   "fit-width": false,
-  "fit-height": true,
+  "fit-height": false,
   "use-project-simulator-setting": false,
   "simulator-orientation": false,
-  "use-customize-simulator": false,
+  "use-customize-simulator": true,
   "simulator-resolution": {
     "width": 960,
     "height": 640
   },
-  "last-module-event-record-time": 1691731715153,
+  "last-module-event-record-time": 1695092167763,
   "assets-sort-type": "name",
   "facebook": {
     "enable": false,
@@ -31,5 +31,7 @@
     "audience": {
       "enable": false
     }
-  }
+  },
+  "preview-port": 7456,
+  "clear-simulator-cache": true
 }

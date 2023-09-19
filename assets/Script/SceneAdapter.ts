@@ -9,8 +9,20 @@ const { ccclass, menu } = cc._decorator;
 @ccclass
 @menu('Comp/SceneAdapter')
 export default class SceneAdapter extends cc.Component {
-
     protected onLoad() {
+        let cvs = this.node.getComponent(cc.Canvas);
+        if (cvs === null) {
+            cc.warn(`节点${this.node.name}没有cc.Canvas组件, SceneAdapter添加失败!`);
+            this.destroy();
+            return;
+        }
+        if (cvs.designResolution.width < cvs.designResolution.height) {
+            cvs.fitWidth = true;
+            cvs.fitHeight = false;
+        } else {
+            cvs.fitWidth = false;
+            cvs.fitHeight = true;
+        }
         this.resize();
         cc.view.setResizeCallback(this.resize.bind(this));
     }

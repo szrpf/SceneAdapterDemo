@@ -21038,7 +21038,7 @@ declare namespace cc.AssetManager {
 		bundle2.load('imgs/cocos', cc.SpriteFrame, null, (err, spriteFrame) => console.log(err));
 		``` 
 		*/
-		load<T extends cc.Asset>(paths: string, type: { prototype: T } onProgress: (finish: number, total: number, item: RequestItem) => void, onComplete: (error: Error, assets: T) => void): void;
+		load<T extends cc.Asset>(paths: string, type: { prototype: T }, onProgress: (finish: number, total: number, item: RequestItem) => void, onComplete: (error: Error, assets: T) => void): void;
 		load<T extends cc.Asset>(paths: string[], type: { prototype: T }, onProgress: (finish: number, total: number, item: RequestItem) => void, onComplete: (error: Error, assets: Array<T>) => void): void;
 		load<T extends cc.Asset>(paths: string, onProgress: (finish: number, total: number, item: RequestItem) => void, onComplete: (error: Error, assets: T) => void): void;
 		load<T extends cc.Asset>(paths: string[], onProgress: (finish: number, total: number, item: RequestItem) => void, onComplete: (error: Error, assets: Array<T>) => void): void;

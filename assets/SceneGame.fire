@@ -122,7 +122,7 @@
         1,
         1,
         1,
-        1
+        0.31666666666666665
       ]
     },
     "_eulerAngles": {
@@ -643,7 +643,7 @@
       "width": 1080,
       "height": 1920
     },
-    "_fitWidth": true,
+    "_fitWidth": false,
     "_fitHeight": false,
     "_id": "6d1ebIvmZJPqKflif+HTsU"
   },
@@ -655,6 +655,6 @@
       "__id__": 2
     },
     "_enabled": true,
-    "_id": "e7Qc+zZkdDeabOFueN7izj"
+    "_id": "b6/k9iZ/BOq7igiEs0QR6w"
   }
 ]
