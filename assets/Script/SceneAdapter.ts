@@ -16,13 +16,8 @@ export default class SceneAdapter extends cc.Component {
             this.destroy();
             return;
         }
-        if (cvs.designResolution.width < cvs.designResolution.height) {
-            cvs.fitWidth = true;
-            cvs.fitHeight = false;
-        } else {
-            cvs.fitWidth = false;
-            cvs.fitHeight = true;
-        }
+        cvs.fitWidth = true;
+        cvs.fitHeight = true;
         this.resize();
         cc.view.setResizeCallback(this.resize.bind(this));
     }
